@@ -1,6 +1,5 @@
 // async function to make the /new_visit API call
-const swiftoId = window.SWIFTO_ID;
-async function fetchNewVisit() {
+async function fetchNewVisit(swiftoId) {
 
     try {
         const response = await fetch(`https://crazyculturedaccess.kartheekakella.repl.co/new_visit`, {
@@ -59,6 +58,5 @@ async function fetchEngaged(swiftoId, textAndVariantIdList) {
 }
 
 // Start the process when the page loads
-window.onload = () => {
-    fetchNewVisit();
-};
+const swiftoId = window.SWIFTO_ID;
+fetchNewVisit();
