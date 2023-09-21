@@ -2,7 +2,7 @@
 async function fetchNewVisit(swiftoId) {
 
     try {
-        const response = await fetch(`https://crazyculturedaccess.kartheekakella.repl.co/new_visit`, {
+        const response = await fetch(`https://swifto-full-b2njeivg2a-uc.a.run.app/new_visit`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -39,7 +39,7 @@ async function fetchEngaged(swiftoId, textAndVariantIdList) {
             text_and_variant_id: textAndVariantIdList
         };
 
-        const response = await fetch('https://crazyculturedaccess.kartheekakella.repl.co/engaged', {
+        const response = await fetch('https://swifto-full-b2njeivg2a-uc.a.run.app/engaged', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
