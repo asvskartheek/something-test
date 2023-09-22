@@ -58,6 +58,6 @@ async function fetchEngaged(swiftoId, textAndVariantIdList) {
 }
 
 // Start the process when the page loads
-const swiftoId = window.SWIFTO_ID;
+var swiftoId = window.SWIFTO_ID;
 console.log(swiftoId);
-fetchNewVisit();
+fetchNewVisit(swiftoId);
